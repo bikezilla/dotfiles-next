@@ -1,3 +1,14 @@
+# Clean install a mac
+1. Download the new image, then
+2. Do the following to a usb drive:
+```
+sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled -- /Applications/Install\ macOS\ Mojave.app
+
+```
+3. Restart holding option
+4. Launch disk utility, erase HDD
+5. Go back and install
+
 # Applications
 
 ## Misc
@@ -22,6 +33,7 @@
 - Dash (requires license)
 - Markoff
 - htop
+- hub (github console client)jsonviewj
 
 ## Work
 - Tunnelblick
