@@ -65,9 +65,24 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 - DraftSight
 
 
-# Chrome accounts
-- work
-- personal
-- kriva
+# Install command history
+    1  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    2  brew install cask
+    4  brew cask install google-chrome
+    5  brew cask install firefox
+    8  brew cask install 1password
+   10  brew cask install commander-one
+   12  brew install rbenv
+   29  brew cask install spectacle
+   33  brew install caffeine
+   34  brew cask install caffeine
+   52  brew install macvim
 
-
+# Notes
+- macvim needs to be linked after install
+- Monaco for Powerline and Menlo for Powerline need to be installed
+- need to change default shell like this: 
+```
+$ sudo echo "$(which zsh)" >> /etc/shells
+$ chsh -s $(which zsh)
+```
