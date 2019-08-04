@@ -74,11 +74,15 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
    10  brew cask install commander-one
    12  brew install rbenv
    29  brew cask install spectacle
-   33  brew install caffeine
    34  brew cask install caffeine
    52  brew install macvim
+   cask zoomus
+   cask slack
+   hub
+   cask bartender
 
 # Notes
+
 - macvim needs to be linked after install
 - Monaco for Powerline and Menlo for Powerline need to be installed
 - need to change default shell like this: 
@@ -86,3 +90,19 @@ sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallme
 $ sudo echo "$(which zsh)" >> /etc/shells
 $ chsh -s $(which zsh)
 ```
+
+- need to add ssh key to keychain, like this:
+1. Edit ~/.ssh/config:
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
+2. ssh-add -K ~/.ssh/id_rsa
+
+- change hostname: `sudo scutil --set HostName [NewHostNameHere]`
+
+- to make tmux work with iTerm:
+1. preferences -> profile -> keys -> option keys send ESC+
+2. remap modifiers -> command keys should send alt
+3. under preferences -> keys -> key bindings, add "do not rempa modifiers" for
+   "real" cmd key usages
