@@ -7,7 +7,6 @@ task :homebrew do
     autoconf
     cairo
     carthage
-    cask
     cscope
     emacs
     erlang
@@ -99,6 +98,9 @@ end
 
 desc 'Install Homebrew Casks'
 task :casks do
+  exec "brew", "install", "cask"
+  exec "brew", "tap", "homebrew/cask-drivers"
+
   formulas = %w(
     1password
     bartender
