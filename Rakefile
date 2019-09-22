@@ -96,3 +96,33 @@ task :homebrew do
 
   exec "brew", "install", *formulas
 end
+
+desc 'Install Homebrew Casks'
+task :casks do
+  formulas = %w(
+    1password
+    bartender
+    caffeine
+    chromedriver
+    commander-one
+    dash
+    firefox
+    fluor
+    garmin-basecamp
+    google-chrome
+    google-earth-pro
+    google-hangouts
+    iterm2
+    kindle
+    octomouse
+    qbserve
+    slack
+    spectacle
+    tunnelblick
+    viber
+    wkhtmltopdf
+    zoomus
+  )
+
+  exec "brew", "cask", "install", *formulas
+end
