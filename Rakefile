@@ -7,6 +7,7 @@ task :homebrew do
     autoconf
     cairo
     carthage
+    cask
     cscope
     emacs
     erlang
@@ -20,12 +21,14 @@ task :homebrew do
     glib
     gmp
     gnutls
+    hivemind
     htop
     hub
     icu4c
     ilmbase
     imagemagick
     jpeg
+    kubernetes-cli
     libde265
     libevent
     libffi
@@ -75,7 +78,6 @@ task :homebrew do
     scmpuff
     shared-mime-info
     sqlite
-    swiftlint
     the_silver_searcher
     tmux
     tnef
@@ -98,9 +100,6 @@ end
 
 desc 'Install Homebrew Casks'
 task :casks do
-  exec "brew", "install", "cask"
-  exec "brew", "tap", "homebrew/cask-drivers"
-
   formulas = %w(
     1password
     bartender
@@ -117,11 +116,14 @@ task :casks do
     iterm2
     kindle
     octomouse
+    phantomjs
     qbserve
     slack
     spectacle
+    spotify
     tunnelblick
     viber
+    visual-studio-code
     wkhtmltopdf
     zoomus
   )
