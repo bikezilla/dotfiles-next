@@ -2,6 +2,8 @@ require 'rake'
 
 desc "Install homebrew apps"
 task :homebrew do
+  system 'brew unlink macvim' # need to unlink default
+
   formulas = %w(
     ack
     autoconf
