@@ -6,6 +6,7 @@ task :homebrew do
 
   formulas = %w(
     ack
+    anycable-go
     autoconf
     cairo
     carthage
@@ -67,7 +68,6 @@ task :homebrew do
     poppler
     postgresql
     python
-    python@2
     qt
     rabbitmq
     rbenv
@@ -80,6 +80,8 @@ task :homebrew do
     scmpuff
     shared-mime-info
     sqlite
+    swiftlint
+    tig
     the_silver_searcher
     tmux
     tnef
@@ -104,6 +106,7 @@ desc 'Install Homebrew Casks'
 task :casks do
   formulas = %w(
     1password
+    android-studio
     bartender
     caffeine
     chromedriver
@@ -111,7 +114,6 @@ task :casks do
     dash
     firefox
     fluor
-    garmin-basecamp
     google-chrome
     google-earth-pro
     google-hangouts
@@ -126,6 +128,7 @@ task :casks do
     tunnelblick
     viber
     visual-studio-code
+    vlc
     wkhtmltopdf
     zoomus
   )
