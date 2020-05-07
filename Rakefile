@@ -80,7 +80,6 @@ task :homebrew do
     scmpuff
     shared-mime-info
     sqlite
-    swiftlint
     tig
     the_silver_searcher
     tmux

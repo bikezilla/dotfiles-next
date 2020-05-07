@@ -1,6 +1,6 @@
 # Rebuild
 
-0. Hide the doc
+0. Hide the dock
 
 1. Remap keyboard shorcuts
 - caps lock => control
